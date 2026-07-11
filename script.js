@@ -1,21 +1,22 @@
 function converterFahrenheit() {
-let celsius = number(document.getElementById("celsius").value);
-let fahrenheit = (celsius * 9/5) + 32;
+let celsius = Number(document.getElementById("celsius").value);
 
-document.getElementById("resultado").innerText = "resultado:" + fahrenheit + "°F";
+let fahrenheit = (celsius * 9 / 5) + 32;
+
+document.getElementById("resultado:").innerText = "resultado:" + fahrenheit + "°F";
 }
 
 function converterKelvin() {
-let celsius = number(document.getElementById("celsius").value);
+let celsius = Number(document.getElementById("celsius").value);
 let kelvin = celsius + 273.15;
 
-document.getElementById("resultado").innerText = "resultado:" + kelvin + "K";}
+document.getElementById("resultado:").innerText = "resultado:" + kelvin + "K";}
 
 
 
 function limpar() {
 document.getElementById("celsius").value = "";
-document.getElementById("resultado").innerText = "resultado:";}
+document.getElementById("resultado:").innerText = "resultado:";}
 
 
 
